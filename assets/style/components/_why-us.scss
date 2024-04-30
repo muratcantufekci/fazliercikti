@@ -1,0 +1,72 @@
+.why-us {
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 80px;
+        padding-bottom: 160px;
+    }
+
+    &__left {
+        width: 30%;
+
+        h2 {
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 60px;
+            color: #023539;
+            margin: 0;
+        }
+
+        p {
+            margin: 22px 0;
+        }
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &__card {
+        padding: 90px 30px 15px 30px;
+        border: 1px solid #E4E4E4;
+        border-radius: 30px;
+        position: relative;
+        width: 240px;
+        height: 252px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+
+        &-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 35px;
+            height: 35px;
+        }
+
+        &-title {
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 60px;
+            color: #023539;
+        }
+
+        &-desc {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 22px;
+            color: #023539;
+        }
+
+        &-arrow {
+            position: absolute;
+            bottom: 5px;
+            right: 20px;
+        }
+    }
+}

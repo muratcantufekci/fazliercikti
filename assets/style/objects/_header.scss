@@ -1,0 +1,31 @@
+.o-header {
+    background: #EEEEEE;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px 0;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__left {
+        display: flex;
+        align-items: center;
+        gap: 150px;
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        a {
+            color: $black;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22.5px;
+        }
+    }
+}

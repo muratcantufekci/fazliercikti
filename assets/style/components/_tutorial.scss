@@ -1,0 +1,118 @@
+.tutorial {
+  &__wrapper {
+    display: flex;
+    gap: 36px;
+  }
+
+  &__left {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 40px;
+    background-image: url("../images/lawyers.png");
+    background-size: cover;
+    padding: 55px;
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      width: 76%;
+
+      h5 {
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 29.95px;
+        color: #ffff;
+        margin: 0;
+      }
+
+      h2 {
+        font-size: 48px;
+        font-weight: 300;
+        line-height: 59.83px;
+        color: #ffff;
+        margin: 0;
+
+        span {
+          font-size: 48px;
+          font-weight: 600;
+          line-height: 59.83px;
+        }
+      }
+
+      p {
+        color: #acacac;
+        margin: 0;
+      }
+    }
+
+    &-actions {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+
+    &-cards {
+      display: flex;
+      gap: 22px;
+      align-self: flex-end;
+    }
+
+    &-card {
+      width: 159px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      padding: 30px;
+      background: #134c50;
+      border-radius: 24px;
+      cursor: pointer;
+
+      img {
+        width: 50px;
+        height: 50px;
+      }
+
+      span {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 22.44px;
+        color: #ffff;
+      }
+    }
+  }
+
+  &__right {
+    flex: 1;
+    background: #e4e4e4;
+    border-radius: 40px;
+    padding: 150px 40px 50px 40px;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 40px;
+      right: 40px;
+    }
+
+    h2 {
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 55px;
+      color: #023539;
+
+      span {
+        font-size: 70px;
+        font-weight: 600;
+        line-height: 55px;
+      }
+    }
+
+    p {
+        margin-bottom: 55px;
+    }
+  }
+}

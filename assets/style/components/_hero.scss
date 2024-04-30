@@ -1,0 +1,56 @@
+.hero {
+    background: #EEEEEE;
+    padding: 45px 0;
+    position: relative;
+
+    h5 {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22.5px;
+        color: $black;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 60px;
+        color: $black;
+        margin-bottom: 22px;
+        width: 92%;
+    }
+
+    &__wrapper {
+        width: 40%;
+    }
+
+    &__contact {
+        display: flex;
+        align-items: center;
+        gap: 36px;
+        margin-top: 70px;
+        width: 92%;
+
+        &-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            span {
+                display: inline-block;
+            }
+        }
+    }
+
+    &__logo {
+        position: absolute;
+        bottom: 0;
+        right: 170px;
+    }
+
+    &__justice {
+        position: absolute;
+        bottom: 0;
+        right: -23px;
+    }
+}
