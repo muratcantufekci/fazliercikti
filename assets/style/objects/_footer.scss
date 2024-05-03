@@ -1,0 +1,138 @@
+.o-footer {
+  background: #023539;
+  padding: 240px 0 20px 0;
+  position: relative;
+  margin-top: 400px;
+
+  &__wrapper {
+    display: flex;
+    gap: 100px;
+  }
+
+  &__asaf {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    span {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 46px;
+      color: #ffff;
+    }
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    a {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      background: #30494b;
+
+      &:hover {
+        background: #bc855e;
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    gap: 45px;
+
+    &-column {
+      display: flex;
+      flex-direction: column;
+      flex: none;
+
+      p {
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 46px;
+        color: #bc855e;
+        margin-bottom: 15px;
+      }
+
+      a {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 46px;
+        color: #ffff;
+      }
+    }
+
+    &-link {
+      color: #bc855e !important;
+    }
+  }
+
+  &__copyright {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 46px;
+    color: #ffff;
+    margin: 45px 0 0 0;
+  }
+
+  &__floater {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: -150px;
+    right: 5%;
+    width: 90%;
+    border-radius: 40px;
+
+    &-left {
+      width: 60%;
+      background: #bc855e;
+      border-radius: 40px 0 0 40px;
+      padding: 60px 0 30px 60px;
+
+      h5 {
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 48.96px;
+        color: #ffff;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 18.36px;
+        color: #ffff;
+      }
+    }
+
+    &-right {
+      width: 40%;
+      background: #023539;
+      border-radius: 0 40px 40px 0;
+      padding: 60px 40px 30px 120px;
+
+      p {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 30px;
+        color: #ffff;
+
+        span {
+            color: #25D366;
+        }
+      }
+    }
+
+    &-img {
+      position: absolute;
+      top: -119px;
+      right: 32%;
+      width: 350px;
+    }
+  }
+}

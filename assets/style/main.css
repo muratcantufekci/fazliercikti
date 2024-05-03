@@ -404,6 +404,125 @@ body {
   line-height: 22.5px;
 }
 
+.o-footer {
+  background: #023539;
+  padding: 240px 0 20px 0;
+  position: relative;
+  margin-top: 400px;
+}
+.o-footer__wrapper {
+  display: flex;
+  gap: 100px;
+}
+.o-footer__asaf {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.o-footer__asaf span {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 46px;
+  color: white;
+}
+.o-footer__social {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.o-footer__social a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: #30494b;
+}
+.o-footer__social a:hover {
+  background: #bc855e;
+}
+.o-footer__nav {
+  display: flex;
+  gap: 45px;
+}
+.o-footer__nav-column {
+  display: flex;
+  flex-direction: column;
+  flex: none;
+}
+.o-footer__nav-column p {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 46px;
+  color: #bc855e;
+  margin-bottom: 15px;
+}
+.o-footer__nav-column a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 46px;
+  color: white;
+}
+.o-footer__nav-link {
+  color: #bc855e !important;
+}
+.o-footer__copyright {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 46px;
+  color: white;
+  margin: 45px 0 0 0;
+}
+.o-footer__floater {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: -150px;
+  right: 5%;
+  width: 90%;
+  border-radius: 40px;
+}
+.o-footer__floater-left {
+  width: 60%;
+  background: #bc855e;
+  border-radius: 40px 0 0 40px;
+  padding: 60px 0 30px 60px;
+}
+.o-footer__floater-left h5 {
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 48.96px;
+  color: white;
+}
+.o-footer__floater-left p {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18.36px;
+  color: white;
+}
+.o-footer__floater-right {
+  width: 40%;
+  background: #023539;
+  border-radius: 0 40px 40px 0;
+  padding: 60px 40px 30px 120px;
+}
+.o-footer__floater-right p {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  color: white;
+}
+.o-footer__floater-right p span {
+  color: #25D366;
+}
+.o-footer__floater-img {
+  position: absolute;
+  top: -119px;
+  right: 32%;
+  width: 350px;
+}
+
 .button {
   display: flex;
   align-items: center;
