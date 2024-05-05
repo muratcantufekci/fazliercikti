@@ -1,0 +1,48 @@
+.activity {
+  padding-top: 120px;
+
+  &__wrapper {
+    display: flex;
+    gap: 40px;
+  }
+
+  &__left {
+    h5 {
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 59.9px;
+      color: #023539;
+    }
+    
+    p {
+        width: 55%;
+    }
+  }
+
+  &__right {
+    flex: 1;
+    .swiper-slide {
+      width: 30% !important;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__arrows {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    img {
+        cursor: pointer;
+
+        &:nth-of-type(1) {
+            transform: rotate(180deg);
+        }
+    }
+  }
+}
