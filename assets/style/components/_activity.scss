@@ -1,5 +1,6 @@
 .activity {
   padding-top: 120px;
+  padding-bottom: 150px;
 
   &__wrapper {
     display: flex;
@@ -13,16 +14,46 @@
       line-height: 59.9px;
       color: #023539;
     }
-    
-    p {
-        width: 55%;
-    }
   }
 
   &__right {
-    flex: 1;
     .swiper-slide {
       width: 30% !important;
+      position: relative;
+      border: 1px solid #e4e4e4;
+      border-radius: 30px;
+      padding: 60px 9px 40px 13px;
+
+      img {
+        position: absolute;
+        top: 30px;
+        right: 25px;
+      }
+
+      h5 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29.95px;
+        color: #023539;
+        margin: 0;
+      }
+
+      p {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14.98px;
+        color: #808080;
+      }
+
+      a {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 17.47px;
+        color: #023539;
+        width: 90%;
+        display: block;
+        text-align: right;
+      }
     }
   }
 
@@ -38,11 +69,11 @@
     gap: 20px;
 
     img {
-        cursor: pointer;
+      cursor: pointer;
 
-        &:nth-of-type(1) {
-            transform: rotate(180deg);
-        }
+      &:nth-of-type(1) {
+        transform: rotate(180deg);
+      }
     }
   }
 }
