@@ -1,72 +1,147 @@
 .why-us {
-    &__wrapper {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 45px;
+    padding-bottom: 30px;
+
+    @include respond-to-up("md") {
+      padding-top: 50px;
+      padding-bottom: 60px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0;
+    }
+
+    @include respond-to-up("xl") {
+      padding-top: 80px;
+      padding-bottom: 160px;
+    }
+
+  }
+
+  &__left {
+    @include respond-to-up("md") {
+      width: 30%;
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 29.95px;
+      color: #023539;
+      margin: 0;
+
+      @include respond-to-up("lg") {
+        font-size: 48px;
+        line-height: 60px;
+      }
+    }
+
+    p {
+      margin: 8px 0;
+
+      @include respond-to-up("lg") {
+        margin: 22px 0;
+      }
+    }
+
+    .button {
+      display: none;
+
+      @include respond-to-up("lg") {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-top: 80px;
-        padding-bottom: 160px;
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+
+    @include respond-to-up("lg") {
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__card {
+    padding: 70px 20px 15px 15px;
+    border: 1px solid #e4e4e4;
+    border-radius: 30px;
+    position: relative;
+    width: 150px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+    @include respond-to-up("lg") {
+      padding: 50px 20px 15px 20px;
+      width: 215px;
+      height: 220px;
     }
 
-    &__left {
-        width: 30%;
-
-        h2 {
-            font-size: 48px;
-            font-weight: 600;
-            line-height: 60px;
-            color: #023539;
-            margin: 0;
-        }
-
-        p {
-            margin: 22px 0;
-        }
+    @include respond-to-up("xl") {
+      padding: 90px 30px 15px 30px;
+      width: 240px;
+      height: 252px;
     }
 
-    &__right {
-        display: flex;
-        align-items: center;
-        gap: 16px;
+    &-icon {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 30px;
+      height: 30px;
+
+      @include respond-to-up("lg") {
+        width: 35px;
+        height: 35px;
+      }
     }
 
-    &__card {
-        padding: 90px 30px 15px 30px;
-        border: 1px solid #E4E4E4;
-        border-radius: 30px;
-        position: relative;
-        width: 240px;
-        height: 252px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 10px;
+    &-title {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 24.96px;
+      color: #023539;
 
-        &-icon {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            width: 35px;
-            height: 35px;
-        }
-
-        &-title {
-            font-size: 48px;
-            font-weight: 600;
-            line-height: 60px;
-            color: #023539;
-        }
-
-        &-desc {
-            font-size: 18px;
-            font-weight: 600;
-            line-height: 22px;
-            color: #023539;
-        }
-
-        &-arrow {
-            position: absolute;
-            bottom: 5px;
-            right: 20px;
-        }
+      @include respond-to-up("lg") {
+        font-size: 48px;
+        line-height: 60px;
+      }
     }
+
+    &-desc {
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 14.98px;
+      color: #023539;
+      margin: 0;
+
+      @include respond-to-up("lg") {
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+
+    &-arrow {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      width: 20px;
+
+      @include respond-to-up("lg") {
+        bottom: 5px;
+        width: auto;
+        height: auto;
+      }
+    }
+  }
 }

@@ -1,7 +1,13 @@
 .tutorial {
   &__wrapper {
     display: flex;
-    gap: 36px;
+    flex-direction: column;
+    gap: 20px;
+
+    @include respond-to-up("md") {
+      flex-direction: row;
+      gap: 36px;
+    }
   }
 
   &__left {
@@ -12,39 +18,75 @@
     border-radius: 40px;
     background-image: url("../images/lawyers.png");
     background-size: cover;
-    padding: 55px;
+    padding: 20px;
+
+    @include respond-to-up("md") {
+      justify-content: center;
+      padding: 55px;
+    }
+
+    @include respond-to-up("xl") {
+      justify-content: flex-start;
+    }
 
     &-text {
       display: flex;
       flex-direction: column;
       gap: 24px;
-      width: 76%;
+
+      @include respond-to-up("xl") {
+        width: 76%;
+      }
 
       h5 {
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 300;
         line-height: 29.95px;
+        text-align: center;
         color: #ffff;
         margin: 0;
+
+        @include respond-to-up("xl") {
+          font-size: 24px;
+          line-height: 29.95px;
+          text-align: left;
+        }
       }
 
       h2 {
-        font-size: 48px;
+        font-size: 24px;
         font-weight: 300;
-        line-height: 59.83px;
+        line-height: 29.92px;
+        text-align: center;
         color: #ffff;
         margin: 0;
 
-        span {
+        @include respond-to-up("xl") {
           font-size: 48px;
-          font-weight: 600;
           line-height: 59.83px;
+          text-align: left;
+        }
+
+        span {
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 29.92px;
+
+          @include respond-to-up("xl") {
+            font-size: 48px;
+            line-height: 59.83px;
+          }
         }
       }
 
       p {
         color: #acacac;
         margin: 0;
+        text-align: center;
+
+        @include respond-to-up("xl") {
+          text-align: left;
+        }
       }
     }
 
@@ -52,35 +94,63 @@
       display: flex;
       align-items: flex-end;
       justify-content: space-between;
+
+      a {
+        display: none;
+
+        @include respond-to-up("xl") {
+          display: flex;
+        }
+      }
     }
 
     &-cards {
+      width: 100%;
       display: flex;
       gap: 22px;
       align-self: flex-end;
+
+      @include respond-to-up("xl") {
+        width: auto;
+      }
     }
 
     &-card {
-      width: 159px;
+      width: 50%;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 16px;
-      padding: 30px;
+      gap: 12px;
+      padding: 24px;
       background: #134c50;
       border-radius: 24px;
       cursor: pointer;
 
+      @include respond-to-up("xl") {
+        width: 159px;
+        gap: 16px;
+        padding: 30px;
+      }
+
       img {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
+
+        @include respond-to-up("xl") {
+          width: 50px;
+          height: 50px;
+        }
       }
 
       span {
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 600;
         line-height: 22.44px;
         color: #ffff;
+
+        @include respond-to-up("xl") {
+          font-size: 18px;
+        }
       }
     }
   }
@@ -89,30 +159,51 @@
     flex: 1;
     background: #e4e4e4;
     border-radius: 40px;
-    padding: 150px 40px 50px 40px;
+    padding: 100px 30px 30px 30px;
     position: relative;
+
+    @include respond-to-up("xl") {
+      padding: 150px 40px 50px 40px;
+    }
 
     img {
       position: absolute;
       top: 40px;
       right: 40px;
+      width: 40px;
+      height: 40px;
+
+      @include respond-to-up("xl") {
+        width: auto;
+        height: auto;
+      }
     }
 
     h2 {
-      font-size: 48px;
+      font-size: 45px;
       font-weight: 600;
-      line-height: 55px;
+      line-height: 43px;
       color: #023539;
 
-      span {
-        font-size: 70px;
-        font-weight: 600;
+      @include respond-to-up("xl") {
+        font-size: 48px;
         line-height: 55px;
+      }
+
+      span {
+        font-size: 50px;
+        font-weight: 600;
+        line-height: 43px;
+
+        @include respond-to-up("xl") {
+          font-size: 70px;
+          line-height: 55px;
+        }
       }
     }
 
     p {
-        margin-bottom: 55px;
+      margin-bottom: 55px;
     }
   }
 }

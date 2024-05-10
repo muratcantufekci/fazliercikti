@@ -1,56 +1,132 @@
 .hero {
-    background: #EEEEEE;
-    padding: 45px 0;
-    position: relative;
+  background: #eeeeee;
+  padding: 20px 0 275px 0;
+  position: relative;
 
-    h5 {
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 22.5px;
-        color: $black;
-        margin: 0;
+  @include respond-to-up("md") {
+    margin-top: -1px;
+  }
+
+  @include respond-to-up("xl") {
+    padding: 65px 0;
+    overflow-x: hidden;
+  }
+
+  h5 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.5px;
+    color: $black;
+    margin: 0;
+
+    @include respond-to-up("xl") {
+      font-size: 18px;
+      line-height: 22.5px;
     }
+  }
 
-    h1 {
-        font-size: 48px;
-        font-weight: 600;
-        line-height: 60px;
-        color: $black;
-        margin-bottom: 22px;
-        width: 92%;
+  h1 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.95px;
+    color: $black;
+    margin-bottom: 16px;
+    width: 72%;
+
+    @include respond-to-up("xl") {
+      font-size: 48px;
+      line-height: 60px;
+      width: 92%;
+      margin-bottom: 22px;
     }
+  }
 
-    &__wrapper {
-        width: 40%;
-    }
-
-    &__contact {
-        display: flex;
-        align-items: center;
-        gap: 36px;
-        margin-top: 70px;
-        width: 92%;
-
-        &-item {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-
-            span {
-                display: inline-block;
-            }
+  &__wrapper {
+    a {
+      &:nth-of-type(1) {
+        display: none;
+        @include respond-to-up("xl") {
+          display: flex;
         }
+      }
+
+      &:nth-of-type(2) {
+        display: flex;
+        @include respond-to-up("xl") {
+          display: none;
+        }
+      }
+    }
+    @include respond-to-up("xl") {
+      width: 40%;
+    }
+  }
+
+  &__contact {
+    display: none;
+    gap: 36px;
+    margin-top: 70px;
+    width: 92%;
+
+    @include respond-to-up("lg") {
+      display: flex;
+      flex-direction: column;
     }
 
-    &__logo {
-        position: absolute;
-        bottom: 0;
-        right: 170px;
+    @include respond-to-up("xl") {
+      align-items: center;
+      flex-direction: row;
     }
 
-    &__justice {
-        position: absolute;
-        bottom: 0;
-        right: -23px;
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      span {
+        display: inline-block;
+      }
     }
+  }
+
+  &__logo {
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    width: 300px;
+
+    @include respond-to-up("md") {
+      right: 40px;
+      width: 400px;
+    }
+
+    @include respond-to-up("lg") {
+      width: 500px;
+    }
+
+    @include respond-to-up("xl") {
+      right: 170px;
+      width: auto;
+    }
+  }
+
+  &__justice {
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    width: 246px;
+
+    @include respond-to-up("md") {
+      width: 330px;
+    }
+
+    @include respond-to-up("lg") {
+      width: 450px;
+    }
+
+    @include respond-to-up("xl") {
+      right: -23px;
+      width: auto;
+    }
+  }
 }

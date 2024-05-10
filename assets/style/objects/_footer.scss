@@ -1,11 +1,61 @@
 .o-footer {
   background: #023539;
-  padding: 240px 0 20px 0;
+  padding: 40px 0 0 0;
   position: relative;
 
-  &__wrapper {
-    display: flex;
+  @include respond-to-up("lg") {
+    padding: 240px 0 20px 0;
+  }
+
+  &__mobile {
+    @include respond-to-up("xl") {
+      display: none;
+    }
+    
+    &-logo {
+      display: block;
+      width: 190px;
+      height: 80px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    &-contact {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 10px;
+
+      p {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 46px;
+        color: #bc855e;
+        margin: 0 0 8px 0;
+      }
+
+      a {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17.5px;
+        color: #ffff;
+        margin-bottom: 12px;
+        display: block;
+      }
+    }
+  }
+
+  &__desktop {
+    display: none;
     gap: 100px;
+
+    @include respond-to-up("xl") {
+      display: flex;
+    }
   }
 
   &__asaf {
@@ -23,8 +73,13 @@
 
   &__social {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 8px;
+
+    @include respond-to-up("xl") {
+      flex-direction: row;
+    }
 
     a {
       width: 40px;
@@ -34,6 +89,7 @@
       justify-content: center;
       border-radius: 8px;
       background: #30494b;
+      margin: 0;
 
       &:hover {
         background: #bc855e;
@@ -72,15 +128,22 @@
   }
 
   &__copyright {
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 500;
     line-height: 46px;
-    color: #ffff;
+    color: #34676b;
+    text-align: center;
     margin: 45px 0 0 0;
+
+    @include respond-to-up("xl") {
+      font-size: 14px;
+      color: #ffff;
+      text-align: left;
+    }
   }
 
   &__floater {
-    display: flex;
+    display: none;
     justify-content: space-between;
     position: absolute;
     top: -150px;
@@ -88,24 +151,40 @@
     width: 90%;
     border-radius: 40px;
 
+    @include respond-to-up("lg") {
+      display: flex;
+    }
+
     &-left {
       width: 60%;
       background: #bc855e;
       border-radius: 40px 0 0 40px;
-      padding: 60px 0 30px 60px;
+      padding: 60px 0 30px 30px;
+
+      @include respond-to-up("xl") {
+        padding: 60px 0 30px 60px;
+      }
 
       h5 {
-        font-size: 42px;
+        font-size: 26px;
         font-weight: 600;
         line-height: 48.96px;
         color: #ffff;
+
+        @include respond-to-up("xl") {
+          font-size: 42px;
+        }
       }
 
       p {
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 600;
         line-height: 18.36px;
         color: #ffff;
+
+        @include respond-to-up("xl") {
+          font-size: 18px;
+        }
       }
     }
 
@@ -115,23 +194,45 @@
       border-radius: 0 40px 40px 0;
       padding: 60px 40px 30px 120px;
 
+      @include respond-to-up("xxl") {
+        padding: 60px 100px 30px 120px;
+      }
+
+      @include respond-to-up("xxxl") {
+        padding: 60px 200px 30px 120px;
+      }
+
       p {
-        font-size: 24px;
+        font-size: 18px;
         font-weight: 600;
         line-height: 30px;
         color: #ffff;
 
+        @include respond-to-up("xl") {
+          font-size: 24px;
+        }
+
         span {
-            color: #25D366;
+          color: #25d366;
         }
       }
     }
 
     &-img {
       position: absolute;
-      top: -118px;
+      top: -90px;
       right: 32%;
-      width: 350px;
+      width: 320px;
+
+      @include respond-to-up("xl") {
+        top: -118px;
+        right: 32%;
+        width: 350px;
+      }
+
+      @include respond-to-up("xxxl") {
+        right: 34%;
+      }
     }
   }
 }
