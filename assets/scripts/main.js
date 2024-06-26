@@ -46,5 +46,25 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
+  const crewSwiper = new Swiper(".crew-swiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+      },
+      1024: {
+        slidesPerView: 4,
+      },
+      1440: {
+        slidesPerView: 5,
+      },
+    },
+    navigation: {
+      nextEl: ".crew-button-next",
+      prevEl: ".crew-button-prev",
+    },
+  });
+
   handleHamburgerMenu();
 });

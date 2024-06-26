@@ -1,0 +1,43 @@
+.breadcrump {
+  display: none;
+  border-bottom: 1px solid #dcdcdc;
+
+  @include respond-to-up("md") {
+    display: block;
+  }
+
+  &__wrapper {
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h5 {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 22.5px;
+      color: #000000;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    span {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 22.5px;
+      color: #000000;
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 22.5px;
+      color: #000000;
+      margin: 0;
+    }
+  }
+}

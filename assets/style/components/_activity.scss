@@ -2,6 +2,13 @@
   padding-top: 50px;
   padding-bottom: 50px;
 
+  &--gray {
+    background: #f3f3f3;
+    @include respond-to-up("lg") {
+      padding-bottom: 280px !important;
+    }
+  }
+
   @include respond-to-up("xl") {
     padding-top: 120px;
     padding-bottom: 150px;
