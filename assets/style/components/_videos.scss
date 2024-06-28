@@ -1,0 +1,35 @@
+.videos {
+  margin-top: 30px;
+  padding-bottom: 50px;
+
+  @include respond-to-up("lg") {
+    margin-top: 50px;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+
+    @include respond-to-up("md") {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include respond-to-up("lg") {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @include respond-to-up("xl") {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+
+  &__item {
+    iframe {
+        width: 100%;
+        height: 200px;
+    }
+  }
+}

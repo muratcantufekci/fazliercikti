@@ -95,7 +95,144 @@
       font-weight: 600;
       line-height: 14.98px;
       color: #023539;
-      margin: 8px 0 0 0;
+      margin: 8px 0 20px 0;
+    }
+  }
+
+  &-detail {
+    margin-top: 30px;
+    padding-bottom: 50px;
+
+    @include respond-to-up("lg") {
+      margin-top: 50px;
+      padding-bottom: 100px;
+    }
+
+    &__p {
+        padding-bottom: 40px;
+        border-bottom: 1px solid #d3d3d3;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      @include respond-to-up("lg") {
+        flex-direction: row;
+        gap: 60px;
+      }
+
+      img {
+        width: 100%;
+
+        @include respond-to-up("lg") {
+          width: 500px;
+        }
+      }
+    }
+
+    &__head {
+      h3 {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29.95px;
+        color: #000000;
+
+        @include respond-to-up("lg") {
+          font-size: 46px;
+          font-weight: 700;
+          line-height: 57.5px;
+        }
+      }
+
+      h6 {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22.5px;
+        color: #000000;
+
+        @include respond-to-up("lg") {
+          font-size: 18px;
+        }
+      }
+    }
+
+    &__content {
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      gap: 30px;
+      margin-top: 30px;
+
+      @include respond-to-up("md") {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      @include respond-to-up("lg") {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      @include respond-to-up("xl") {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+    }
+
+    &__item {
+      img {
+        width: 100%;
+      }
+
+      p {
+        margin-bottom: 20px;
+      }
+    }
+
+    &__publish {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+
+      &-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        img {
+          width: auto;
+        }
+
+        h6 {
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 19.97px;
+          color: #023539;
+          margin: 0;
+        }
+        
+        span {
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 19.97px;
+          color: #023539;
+        }
+      }
+    }
+
+    &__image {
+      &-mobile {
+        margin-top: 20px;
+        @include respond-to-up("lg") {
+          display: none;
+        }
+      }
+
+      &-desktop {
+        display: none;
+        @include respond-to-up("lg") {
+          display: block;
+        }
+      }
     }
   }
 }
