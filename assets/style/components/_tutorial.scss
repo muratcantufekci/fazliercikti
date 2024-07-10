@@ -159,24 +159,18 @@
     flex: 1;
     background: #e4e4e4;
     border-radius: 40px;
-    padding: 100px 30px 30px 30px;
+    padding: 30px;
     position: relative;
 
     @include respond-to-up("xl") {
-      padding: 150px 40px 50px 40px;
+      padding: 40px;
     }
 
     img {
-      position: absolute;
-      top: 40px;
-      right: 40px;
-      width: 40px;
-      height: 40px;
-
-      @include respond-to-up("xl") {
-        width: auto;
-        height: auto;
-      }
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 30px;
     }
 
     h2 {
