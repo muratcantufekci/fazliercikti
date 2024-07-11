@@ -567,7 +567,7 @@ body {
   font-size: 22px;
   font-weight: 500;
   line-height: 46px;
-  color: #bc855e;
+  color: #C08C68;
   margin-bottom: 15px;
 }
 .o-footer__nav-column a {
@@ -577,7 +577,7 @@ body {
   color: white;
 }
 .o-footer__nav-link {
-  color: #bc855e !important;
+  color: #C08C68 !important;
 }
 .o-footer__copyright {
   font-size: 10px;
@@ -1239,14 +1239,14 @@ body {
     flex-direction: row;
   }
 }
-.activity__left h5 {
+.activity__left h6 {
   font-size: 24px;
   font-weight: 600;
   line-height: 29.95px;
   color: #023539;
 }
 @media (min-width: 1200px) {
-  .activity__left h5 {
+  .activity__left h6 {
     font-size: 48px;
     line-height: 59.9px;
   }
@@ -1302,7 +1302,7 @@ body {
   font-size: 12px;
   font-weight: 400;
   line-height: 14.98px;
-  color: #808080;
+  color: #5C5C5C;
 }
 .activity__item a {
   font-size: 14px;
